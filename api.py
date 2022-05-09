@@ -14,7 +14,7 @@ class BatResource(Resource):
             'res': '1+1 = 2'
         }
 
-class CatResource(Resource):
+class Resource(Resource):
     def get(self):
         return {
             'sts': 'success',
@@ -30,7 +30,7 @@ api.add_resource(
 
 api.add_resource(
     CatResource, # shape of user resource
-    '/cat'
+    '/bat'
 )
 
 
