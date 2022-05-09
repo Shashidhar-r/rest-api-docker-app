@@ -1,0 +1,8 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - docker login --username shashidhar1397 --password c3378013-ebae-4120-9e84-86f3179f6533
+      - docker build -t rest-api-ci-cd:latest .
+      - docker tag rest-api-ci-cd:latest shashidhar1397/rest-api-ci-cd:latest
+      - docker push shashidhar1397/rest-api-ci-cd:latest
