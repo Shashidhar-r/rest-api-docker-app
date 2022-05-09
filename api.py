@@ -14,7 +14,7 @@ class BatResource(Resource):
             'res': '1+1 = 2'
         }
 
-class Resource(Resource):
+class CatResource(Resource):
     def get(self):
         return {
             'sts': 'success',
